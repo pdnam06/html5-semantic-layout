@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bài thực hành tạo bố cục trang web bằng các thẻ ngữ nghĩa HTML5.">
+    <title>Bố cục trang web bằng HTML5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="#home" aria-label="Trang chủ Semantic Web">
+            <span aria-hidden="true">&lt;/&gt;</span>
+            Semantic Web
+        </a>
+        <p>Bố cục hiện đại bằng các thẻ ngữ nghĩa HTML5</p>
+    </header>
+
+    <nav class="main-nav" aria-label="Điều hướng chính">
+        <a class="active" href="#home">Trang chủ</a>
+        <a href="#articles">Bài viết</a>
+        <a href="#html5">HTML5</a>
+        <a href="#resources">Tài nguyên</a>
+        <a href="#contact">Liên hệ</a>
+    </nav>
+
+    <main id="home" class="page-layout">
+        <section id="articles" class="content-section">
+            <header class="section-header">
+                <p class="eyebrow">NỘI DUNG CHÍNH · SECTION</p>
+                <h1>Khám phá HTML5 Semantic</h1>
+                <p>Các thẻ ngữ nghĩa giúp cấu trúc trang rõ ràng, dễ đọc và thân thiện với công cụ tìm kiếm.</p>
+            </header>
+
+            <article id="html5" class="featured-article">
+                <figure>
+                    <span aria-hidden="true">HTML5</span>
+                    <figcaption>Ngôn ngữ đánh dấu cho Web hiện đại</figcaption>
+                </figure>
+                <section class="article-content">
+                    <p class="article-meta">BÀI VIẾT NỔI BẬT · ARTICLE</p>
+                    <h2>Tại sao nên sử dụng thẻ ngữ nghĩa?</h2>
+                    <p>
+                        Thay vì dùng nhiều thẻ <code>div</code> khó phân biệt, HTML5 cung cấp
+                        <code>header</code>, <code>nav</code>, <code>section</code>,
+                        <code>article</code>, <code>aside</code> và <code>footer</code>.
+                    </p>
+                    <a href="#more">Đọc bài viết <span aria-hidden="true">→</span></a>
+                </section>
+            </article>
+
+            <section id="more" class="article-grid" aria-label="Các bài viết khác">
+                <article>
+                    <span class="article-number">01</span>
+                    <p class="article-meta">HEADER & NAV</p>
+                    <h2>Phần đầu trang và điều hướng</h2>
+                    <p>Header chứa thông tin giới thiệu, trong khi nav tập hợp các liên kết điều hướng chính.</p>
+                </article>
+
+                <article>
+                    <span class="article-number">02</span>
+                    <p class="article-meta">SECTION & ARTICLE</p>
+                    <h2>Phân nhóm nội dung rõ ràng</h2>
+                    <p>Section chia nội dung theo chủ đề, còn article biểu diễn một nội dung độc lập.</p>
+                </article>
+
+                <article>
+                    <span class="article-number">03</span>
+                    <p class="article-meta">ASIDE & FOOTER</p>
+                    <h2>Thông tin bổ trợ và cuối trang</h2>
+                    <p>Aside chứa nội dung liên quan; footer cung cấp bản quyền và các liên kết bổ sung.</p>
+                </article>
+            </section>
+        </section>
+
+        <aside class="sidebar" aria-label="Thông tin bổ trợ">
+            <section class="sidebar-card">
+                <p class="eyebrow">ASIDE</p>
+                <h2>Thẻ HTML5 sử dụng</h2>
+                <ul>
+                    <li><code>&lt;header&gt;</code><span>Phần đầu trang</span></li>
+                    <li><code>&lt;nav&gt;</code><span>Thanh điều hướng</span></li>
+                    <li><code>&lt;section&gt;</code><span>Nhóm nội dung</span></li>
+                    <li><code>&lt;article&gt;</code><span>Nội dung độc lập</span></li>
+                    <li><code>&lt;aside&gt;</code><span>Nội dung bổ trợ</span></li>
+                    <li><code>&lt;footer&gt;</code><span>Phần cuối trang</span></li>
+                </ul>
+            </section>
+
+            <section id="resources" class="sidebar-card resource-card">
+                <p class="eyebrow">TÀI NGUYÊN</p>
+                <h2>Lợi ích của Semantic HTML</h2>
+                <p>Giúp mã nguồn dễ bảo trì, hỗ trợ SEO và cải thiện khả năng tiếp cận.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics" target="_blank" rel="noopener noreferrer">Tìm hiểu thêm</a>
+            </section>
+
+            <section class="sidebar-card tip-card">
+                <strong>Mẹo nhỏ</strong>
+                <p>Chọn thẻ dựa trên ý nghĩa của nội dung thay vì hình thức hiển thị.</p>
+            </section>
+        </aside>
+    </main>
+
+    <footer id="contact" class="site-footer">
+        <section>
+            <a class="logo footer-logo" href="#home"><span>&lt;/&gt;</span> Semantic Web</a>
+            <p>Bài thực hành xây dựng bố cục bằng các thẻ ngữ nghĩa HTML5.</p>
+        </section>
+        <nav aria-label="Liên kết cuối trang">
+            <a href="#home">Trang chủ</a>
+            <a href="#articles">Bài viết</a>
+            <a href="#resources">Tài nguyên</a>
+        </nav>
+        <p>© 2026 Semantic Web</p>
+    </footer>
+</body>
+</html>
